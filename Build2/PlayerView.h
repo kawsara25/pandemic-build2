@@ -13,7 +13,7 @@
 #include <string>
 //#include "City.h"
 #include "Player.h"
-
+#include "Graph.h"
 #include <vector>
 #include <iterator>
 
@@ -35,4 +35,17 @@ protected:
     Player* p;
 
 };
+class GraphView: public Observer
+{
+public:
+	GraphView();
+	GraphView(Graph*);
+	~GraphView();
+	void UpdateMap();
+	void displayMap(); 
+private:
+	Graph* _subject;
+};
+
+
 #endif /* PlayerView_h */
