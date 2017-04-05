@@ -25,6 +25,11 @@ void Subject::Notify(){
     for (; i !=listobservers.end(); ++i)
         (*i)->Update();
 };
+void Subject::NotifyMap(){
+    std::vector<Observer *>::iterator i = listobservers.begin();
+    for (; i !=listobservers.end(); ++i)
+        (*i)->UpdateMap();
+};
 void Subject::NotifyHand(){
     std::vector<Observer *>::iterator i = listobservers.begin();
     for (; i !=listobservers.end(); ++i)
