@@ -23,7 +23,12 @@
 //ONLY FOR TEST (TO BE REMOVED)
 City* atlantacity = new City("Atlanta");
 
-
+void initMap()
+{
+    Graph myGraph;
+	GraphView gView(&myGraph);
+	myGraph.createMap();
+}
 void initInfectionDeck() {
     infectiondeck.insert(infectiondeck.end(), infectioncardarr, infectioncardarr + (sizeof(infectioncardarr) / sizeof(infectioncardarr[0])));
     
@@ -207,7 +212,7 @@ void initialInfection() {
 }
 
 void initGame(){
-    
+    initMap();    
     initInfectionDeck();
     
     setInitPlayerDeck();
