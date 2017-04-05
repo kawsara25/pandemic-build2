@@ -21,6 +21,7 @@ public:
     virtual void Attach(Observer* observer);
     virtual void Detach(Observer* observer);
     virtual void Notify();
+     virtual void NotifyMap();
     virtual void NotifyHand();
     virtual void NotifyDiscardHand();
     virtual void NotifyEpidemicCard();
