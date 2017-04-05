@@ -106,3 +106,10 @@ void GraphView::displayMap(){
 	_subject->cityAndConnection();
 	
 }
+  void GraphView::UpdateHand() {};
+    voidGraphView:: UpdateDiscardHand(){};
+    void GraphView:: UpdateEpidemicCard(){};
+    void GraphView:: display(){};
+    void GraphView::displayHand(){};
+    void GraphView::displayDiscardHand(){};
+    void GraphView::displayEpidemicCard(){};
