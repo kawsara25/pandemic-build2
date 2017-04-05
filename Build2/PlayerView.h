@@ -35,6 +35,7 @@ protected:
     Player* p;
 
 };
+
 class GraphView: public Observer
 {
 public:
@@ -43,6 +44,14 @@ public:
 	~GraphView();
 	void UpdateMap();
 	void displayMap(); 
+	 void Update();
+    void UpdateHand();
+    void UpdateDiscardHand();
+    void UpdateEpidemicCard();
+    void display();
+    void displayHand();
+    void displayDiscardHand();
+    void displayEpidemicCard();
 private:
 	Graph* _subject;
 };
