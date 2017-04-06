@@ -23,7 +23,8 @@
 
 
 //ONLY FOR TEST (TO BE REMOVED)
-City* atlantacity = new City("Atlanta");void initMap()
+City* atlantacity = new City("Atlanta");
+void initMap()
 {
 	Graph myGraph;
 	GraphView gView(&myGraph);
