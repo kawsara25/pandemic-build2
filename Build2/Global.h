@@ -195,6 +195,62 @@ InfectionCard* sydney_inf = new InfectionCard("sydney", "Sydney", "red", "");
 
 InfectionCard* infectioncardarr[] = { sanfrancisco_inf,chicago_inf,atlanta_inf,montreal_inf, washington_inf, newyork_inf, londres_inf,madrid_inf,paris_inf,milan_inf,essen_inf,stpetersbourg_inf,losangeles_inf, mexico_inf, miami_inf, bogota_inf, lima_inf, santiago_inf, buesnosaires_inf, saopaulo_inf, lagos_inf, kinshasa_inf, johannesburg_inf, khartoum_inf, moscou_inf, istanbul_inf, alger_inf, lecaire_inf, bagdad_inf, teheran_inf, karachi_inf, ryad_inf, delhi_inf, mumbai_inf, chennai_inf, calcutta_inf, pekin_inf, seoul_inf, tokyo_inf, shanghai_inf, osaka_inf, taipei_inf, hongkong_inf, manille_inf, bangkok_inf, hochiminhville_inf, jakarta_inf, sydney_inf };
 
+
+//--------------------------- cities------------------------------------------------------------------//
+//Blue
+City* sanfranciscoCity= new City( "San Francisco", "Blue");
+City* chicagoCity= new City("Chicago", "Blue");
+City* atlantaCity= new City( "Atlanta", "Blue");
+City* montrealCity= new City("Montreal", "Blue");
+City* washingtonCity= new City("Washington", "Blue");
+City* newyorkCity= new City( "New York", "Blue");
+City* londresCity= new City( "Londres", "Blue");
+City* madridCity= new City( "Madrid", "Blue");
+City* parisCity= new City("Paris", "Blue");
+City* milanCity= new City( "Milan", "Blue");
+City* essenCity= new City("Essen", "Blue");
+City* stpetersbourgCity= new City("St Petersbourg", "Blue");
+//Yellow
+City* losangelesCity= new City( "Los Angeles", "Yellow");
+City* mexicoCity= new City("Mexico", "Yellow");
+City* miamiCity= new City( "Miami", "Yellow");
+City* bogotaCity= new City("Bogota", "Yellow");
+City* limaCity= new City("Lima", "Yellow");
+City* santiagoCity= new City( "Santiago", "Yellow");
+City* buesnosairesCity= new City( "Buenos Aires", "Yellow");
+City* saopauloCity= new City( "Sao Paulo", "Yellow");
+City* lagosCity= new City( "Lagos", "Yellow");
+City* kinshasaCity= new City( "Kinshasa", "Yellow");
+City* johannesburgCity= new City( "Johannesburg", "Yellow");
+City* khartoumCity= new City("Khartoum", "Yellow");
+//Black
+City* moscouCity= new City("Moscou", "Black");
+City* istanbulCity= new City( "Istanbul", "Black");
+City* algerCity= new City("Alger", "Black");
+City* lecaireCity= new City( "Le Caire", "Black");
+City* bagdadCity= new City( "Bagdad", "Black");
+City* teheranCity= new City( "Teheran", "Black");
+City* karachiCity= new City( "Karachi", "Black");
+City* ryadCity= new City( "Ryad", "Black");
+City* delhiCity= new City( "Delhi", "Black");
+City* mumbaiCity= new City( "Mumbai", "Black");
+City* chennaiCity= new City("Chennai", "Black");
+City* calcuttaCity= new City( "Calcutta", "Black");
+//Red
+City* pekinCity= new City( "Pekin", "Red");
+City* seoulCity= new City( "Seoul", "Red");
+City* tokyoCity= new City( "Tokyo", "Red");
+City* shanghaiCity= new City( "Shanghai", "Red");
+City* osakaCity= new City( "Osaka", "Red");
+City* taipeiCity= new City( "Taipei", "Red");
+City* hongkongCity= new City( "Hong Kong", "Red");
+City* manilleCity= new City("Manille", "Red");
+City* bangkokCity= new City( "Bangkok", "Red");
+City* hochiminhvilleCity= new City( "Ho Chi Minh Ville", "Red");
+City* jakartaCity= new City( "Jakarta", "Red");
+City* sydneyCity= new City( "Sydney", "Red");
+
+City* cityArr[] = { sanfranciscoCity,chicagoCity,atlantaCity,montrealCity,washingtonCity,newyorkCity,londresCity,madridCity,parisCity,milanCity,essenCity,stpetersbourgCity,losangelesCity,mexicoCity,miamiCity,bogotaCity,limaCity,santiagoCity,buesnosairesCity,saopauloCity,lagosCity,kinshasaCity,johannesburgCity,khartoumCity,moscouCity,istanbulCity,algerCity,lecaireCity,bagdadCity,teheranCity,karachiCity,ryadCity,delhiCity,mumbaiCity,chennaiCity,calcuttaCity,pekinCity,seoulCity,tokyoCity,shanghaiCity,osakaCity,taipeiCity,hongkongCity,manilleCity,bangkokCity,hochiminhvilleCity,jakartaCity,sydneyCity };
 // <<<-----------------------global objects--------------------------------------------------
 
 #endif /* Global_h */
