@@ -6,29 +6,88 @@
 //
 //main.cpp
 
-#include <iostream>
+#include <iostream
 #include <ctime>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 #include <vector>
 #include <algorithm>
 #include <random>
-
-#include "PlayerView.h"
-//#include "CardsHeaders.h" (through PlayerView - Player - Subject - CardsHeaders)
+#include "GraphView.h"
+#include "PlayerView.h
+#include "CardsHeaders.h" (through PlayerView - Player - Subject - CardsHeaders)
 //#include "SaveLoad.h"
 #include "Global.h"
-
-
+　
 //ONLY FOR TEST (TO BE REMOVED)
-City* atlantacity = new City("Atlanta");
-
+City* atlantacity = new City("Atlanta", "blue");
 void initMap()
 {
-    Graph myGraph;
-	GraphView gView(&myGraph);
-	myGraph.createMap();
+	for (int i = 0; i < 48; i++) {
+		cityVector.push_back(cityArr[i]);
+	
+	}
+	myGraph.addC(cityVector);
+	myGraph.addedge(chicagoCity, washingtonCity);
+	myGraph.addedge(atlantaCity,miamiCity);
+	myGraph.addedge(chicagoCity, losangelesCity);
+	myGraph.addedge(chicagoCity, mexicoCity);
+	myGraph.addedge(miamiCity, mexicoCity);
+	myGraph.addedge(limaCity, mexicoCity);
+	myGraph.addedge(bogotaCity,mexicoCity);
+	myGraph.addedge(essenCity, stpetersbourgCity);
+	myGraph.addedge(londresCity, essenCity);
+	myGraph.addedge(essenCity, milanCity);
+	myGraph.addedge(madridCity, parisCity);
+	myGraph.addedge(londresCity, parisCity);
+	myGraph.addedge(newyorkCity, madridCity);
+	myGraph.addedge(saopauloCity, madridCity);
+	myGraph.addedge(newyorkCity, londresCity);
+	myGraph.addedge(madridCity, londresCity);
+	myGraph.addedge(washingtonCity, newyorkCity);
+	myGraph.addedge(montrealCity, newyorkCity);
+	myGraph.addedge(chicagoCity, sanfranciscoCity);
+	myGraph.addedge(atlantaCity, chicagoCity);
+	myGraph.addedge(chicagoCity, montrealCity);
+	myGraph.addedge(washingtonCity, montrealCity);
+	myGraph.addedge(atlantaCity, washingtonCity);
+	myGraph.addedge(stpetersbourgCity, istanbulCity);
+	myGraph.addedge(milanCity, istanbulCity);
+	myGraph.addedge(moscouCity, istanbulCity);
+	myGraph.addedge(stpetersbourgCity, moscouCity);
+	myGraph.addedge(saopauloCity, lagosCity);
+	myGraph.addedge(bogotaCity, saopauloCity);
+	myGraph.addedge(madridCity, saopauloCity);
+	myGraph.addedge(bogotaCity, buesnosairesCity);
+	myGraph.addedge(bogotaCity, limaCity);
+	myGraph.addedge(miamiCity, bogotaCity);
+	myGraph.addedge(teheranCity, karachiCity);
+	myGraph.addedge(delhiCity, karachiCity);
+	myGraph.addedge(moscouCity, teheranCity);
+	myGraph.addedge(teheranCity, bagdadCity);
+	myGraph.addedge(istanbulCity, algerCity);
+	myGraph.addedge(madridCity, algerCity);
+	myGraph.addedge(bangkokCity, jakartaCity);
+	myGraph.addedge(bangkokCity, hochiminhvilleCity);
+	myGraph.addedge(jakartaCity, hochiminhvilleCity);
+	myGraph.addedge(calcuttaCity, bangkokCity);
+	myGraph.addedge(hochiminhvilleCity, manilleCity);
+	myGraph.addedge(calcuttaCity, hongkongCity);
+	myGraph.addedge(jakartaCity, hongkongCity);
+	myGraph.addedge(karachiCity, mumbaiCity);
+	myGraph.addedge(delhiCity, mumbaiCity);
+	myGraph.addedge(teheranCity, delhiCity);
+	myGraph.addedge(bagdadCity, delhiCity);
+	myGraph.addedge(bagdadCity, ryadCity);
+	myGraph.addedge(karachiCity, ryadCity);
+	myGraph.addedge(delhiCity, chennaiCity);
+	myGraph.addedge(mumbaiCity, chennaiCity);
+	myGraph.addedge(delhiCity, calcuttaCity);
+
+	//myGraph.createMap();
+	//myGraph.cityWithAdjacency();
 }
+
 void initInfectionDeck() {
     infectiondeck.insert(infectiondeck.end(), infectioncardarr, infectioncardarr + (sizeof(infectioncardarr) / sizeof(infectioncardarr[0])));
     
