@@ -4,7 +4,7 @@
 Graph::Graph(){
 
 }
-
+//ufjjkbhghukgjkgd
 void Graph::addC(vector<City*>cityVector){
 
 	//vector<City*>::iterator it = cityVector.begin();
